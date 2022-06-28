@@ -1,9 +1,14 @@
 #inicio{
-    background-image: url('7-publicaciones-ODS-1.jpg');
+    /*background-image: url('7-publicaciones-ODS-1.jpg');*/
+    background-color: blue;
     width: auto;
-    height: 500px;
+    height: 550px;
 }
 
-/* #inicio_sesion{
-    top: 400px; bottom: 20px;
-} */
+#inicio_sesion{
+    width: 170px;
+    height: 60px;
+    background-color:rgb(70, 207, 207) ;
+    border-radius: 10px;
+    font-size: 20px;
+}
