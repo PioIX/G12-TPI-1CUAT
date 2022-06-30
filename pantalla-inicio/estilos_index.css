@@ -17,8 +17,14 @@ body{
 
 /*------------------------------------------------*/
 
+body, html{
+    background-color: #ece6c2;
+    border: 0 !important;
+}
+
 #main{
     background-color: #ece6c2;
+
 }
 
 #inicio{
