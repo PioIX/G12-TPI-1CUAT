@@ -28,7 +28,7 @@ body,html{
     height: 100%;  
 }
 
-#container{
+.caja{
     top: 5%; right:2.5% ; left:2.5%; bottom:5%; 
     display:flex;
     position: absolute;
@@ -87,7 +87,7 @@ body,html{
     z-index: 5;
     display: inline-block;
     color:#ece6c2;
-
+    border:none !important;
 }
 
 #pregunta{
@@ -109,4 +109,35 @@ body,html{
 #enviar{
     background-color: #283618;
     color: #ece6c2;
+}
+
+#final{
+    background-color: #606C38;
+}
+
+#texto{
+    width: 60%;
+    height: 20%;
+    background-color:#283618;
+    top: 6% ; right: 20%; left: 20%;
+    position: absolute;
+}
+
+#ranking{
+    width: 60%;
+    height: 50%;
+    background-color:#ece6c2;
+    top: 28% ; right: 20%; left: 20%;
+    position: absolute;
+}
+
+.boton{
+    width: 16%;
+    height: 8%;
+    background-color:#283618 !important;
+    border: none !important;
+    position: absolute;
+    top: 82%;
+    z-index: 5;
+    display: inline-block;
 }
