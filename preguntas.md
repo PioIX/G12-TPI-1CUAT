@@ -1,5 +1,15 @@
 # Preguntas ODS
 
+### Indice:
+- [Nivel 1](https://github.com/PioIX/G12-TPI-1CUAT/blob/preguntasODS/preguntas.md#nivel-1-basico)
+  - [Agenda 2030](https://github.com/PioIX/G12-TPI-1CUAT/blob/preguntasODS/preguntas.md#categoria-agenda-2030)
+- [Nivel 2](https://github.com/PioIX/G12-TPI-1CUAT/blob/preguntasODS/preguntas.md#nivel-2-especifico-de-cada-ods)
+  - [ODS 4](https://github.com/PioIX/G12-TPI-1CUAT/blob/preguntasODS/preguntas.md#categoria-ods-4)
+  - [ODS 10](https://github.com/PioIX/G12-TPI-1CUAT/blob/preguntasODS/preguntas.md#categoria-ods-10)
+  - [ODS 15](https://github.com/PioIX/G12-TPI-1CUAT/blob/preguntasODS/preguntas.md#categoria-ods-15)
+- [Nivel 3](https://github.com/PioIX/G12-TPI-1CUAT/blob/preguntasODS/preguntas.md#nivel-3-estadisticas)
+  - [Bonus de conciencia social](https://github.com/PioIX/G12-TPI-1CUAT/blob/preguntasODS/preguntas.md#categoria-bonus-de-conciencia-social)
+
 ## NIVEL 1 (Basico):
 
 ### Categoria: Agenda 2030
