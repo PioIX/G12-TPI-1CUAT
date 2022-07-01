@@ -17,41 +17,44 @@ body{
 
 /*------------------------------------------------*/
 
-#body,html, #container{
-    background-color: #606C38;
+html,
+body {
+  height: 100%;
 }
 
-#main{
-    background-color: #ece6c2;
-    height: 90vh;
-    width: 30%;
+body {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #ece6c2;
+  /* background-image: url(placeholder.png); */
 }
 
-.input{
-    width: 80% !important;
-}
-
-#imagen1{
-    width: 30%;
-    height: auto;
-    z-index: 5;
-    margin-bottom: 5%;
-    position: absolute;
-}
-
-#imagen2{
+.form-signin {
     width: 100%;
-    height: auto;
-    opacity: 0.4;
-    z-index: 1;
-    max-height: 100%;
-    bottom:0 !important;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;    
 }
 
-.boton{
-    background-color:#283618 !important;
-    border: none !important;
-    position: absolute;
-    z-index: 5;
-    display: inline-block;
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
