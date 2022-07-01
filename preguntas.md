@@ -184,3 +184,4 @@ Para lograrlo se requiere principalmente de  infraestructura, equipamiento y equ
 
 > *Texto despues de respuesta: Este es un dato desalentador teniendo en cuenta que la meta para el 2030 es 12.1% y que la línea de partida fue en 2016 con un 20.5%*
 
+[Fuentes](https://github.com/PioIX/G12-TPI-1CUAT/blob/preguntasODS/Fuentes%20de%20las%20preguntas.md)
