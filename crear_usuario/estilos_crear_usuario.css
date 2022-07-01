@@ -17,37 +17,28 @@ body{
 
 /*------------------------------------------------*/
 
-#body,html{
-    background-color: #606C38;
+html,
+body {
+  height: 100%;
+
 }
 
-/* #base {
-    background-color: #ece6c2;
-    width: 500px;
-    position: absolute;
-    padding: 10px;
-    height: 650px;
-    min-width: 800px;
-} */
-
-.card{
-    background-color: #ece6c2 !important;
-    border: none !important;
-    width: 700px !important;
-    min-width: 800px;
-    height: auto;
+body{
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #ece6c2;
+  /* background-image: url(placeholder.png); */
 }
 
-.img{
+.form-signin {
     width: 100%;
-    height: auto;
+    max-width: 750px;
+    padding: 15px;
+    margin: auto;    
 }
 
-input{
-    border: none !important;
-}
-
-#boton{
-    background-color:#283618 !important;
-    border: none !important;
+img{
+    width: 70%;
 }
