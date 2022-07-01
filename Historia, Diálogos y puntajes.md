@@ -5,6 +5,7 @@ El sapo le promete que podrá continuar su camino si pasa una de sus pruebas, un
 El aventurero accede de mala gana, y de está manera comienza este juego.
 
 # Diálogo Inicial (Sirve de introducción antes de empezar el juego):
+(Se puede mantener como diálogos separados o unificiar en un parrafo solo, como una especie de monólogo)
 - Hola viajero! Veo que tu nombre es (nombre usuario), y tienes una misión muy importante que cumplir. 
 - ¿Cómo lo sé? Pues verás, soy un sapo mágico, y estás atravesando mi territorio.
 - ¿Qué me mueva?¡No puede hacer eso!¿Qué no tenés tiempo? Ya lo sé, pero no puedo dejarte pasar.Antes tenés que superar una de mis… PRUEBAS.
