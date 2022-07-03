@@ -13,6 +13,7 @@
 }
 body{
     overflow: overlay;
+
 }
 
 /*------------------------------------------------*/
@@ -23,23 +24,34 @@ body,html{
     margin: 0 !important;
 }
 
-#aspect-ratio{
-    min-height: 640px;
-    height: 100%;  
+#base{
+    min-height: 640px !important; 
+    background-color: #ece6c2;
+    position: absolute;  
 }
 
-.caja{
-    top: 5%; right:2.5% ; left:2.5%; bottom:5%; 
-    display:flex;
+#aspect-ratio{
+    min-height: 640px !important;
+    height: 100%;
+    position:relative;
+}
+
+
+#container{
+    top: 5%; right:2.5%; left:2.5%; bottom:5%; 
     position: absolute;
     width: 95%;
     height: auto;
+    
 }
 
 #main{
     width: 80%;
     height: 100%;
-    background-color: #606C38;
+    background: url(../Imagenes/Fondos/Nivel_1/Pasto.png) center bottom repeat-x,
+                url(../Imagenes/Fondos/Nivel_1/Arboles.png) center 90% repeat-x,
+                url(../Imagenes/Fondos/Nivel_1/Cielo.png) center top repeat-x;
+    background-size: 40%, 80%, 55%;
     float:left;
     position: relative;
 }
@@ -50,13 +62,15 @@ body,html{
     background-color: #283618;
     float: right;
     position: relative;
+    background: url(../Imagenes/Fondos/Mapa/tile1.png) center bottom repeat;
+    background-size: 10%;
 }
 
 #informacion, #cuestionario{
     width: 80%;
     height: 75%;
     top: 4%; right: 3.2%;
-    background-color:#ece6c2;
+    background-color:#edede0;
     float:right;
     padding-left: 32px !important; /* el scrollbar agrega 12px y parece que no esta centrado, correccion */
     z-index: 1;
@@ -66,6 +80,7 @@ body,html{
 
 #avatar_usuario{
     width: 20%;
+    height: auto;
     bottom: 2.5%; right: 2%;
     z-index: 3;
     object-fit: cover;
