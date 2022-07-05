@@ -10,47 +10,48 @@
         <link href="estilos_crear_usuario.css" rel="stylesheet"/>
     </head>
     <body class="text-center p-0">
-    
+        
         <main class="form-signin">
-            <h1 class="fs-1 text-center mb-5" style="color:#606C38">¡Vamos a crear tu usuario!</h1><br>
+            
+            <h1 class="fs-1 text-center mb-3 mt-3" style="color:#23352A">¡Vamos a crear tu usuario!</h1><br>
 
             <form>
                 <div class="row g-0">
                     <div class="d-inline-flex align-items-center">
                         <label for="usuario" class="form-label fs-5 me-3">Usuario</label>
-                        <input type="text" class="form-control" id="usuario" placeholder="Ingresa tu usuario">
+                        <input type="text" class="form-control border-0" id="usuario" placeholder="Ingresa tu usuario">
                     </div>
                 </div>
 
                 <div class="row g-0 mt-4">
                     <div class="d-inline-flex align-items-center">
                         <label for="contraseña" class="form-label fs-5 me-3">Contraseña</label>
-                        <input type="password" class="form-control" id="contraseña" placeholder="Ingresa tu contraseña">
+                        <input type="password" class="form-control border-0" id="contraseña" placeholder="Ingresa tu contraseña">
                     </div>
                 </div>
                 
                 <div class="row g-0 mt-4">
                     <div class="d-inline-flex align-items-center">
                         <label for="contraseña" class="form-label fs-5 me-3 text-nowrap">Repetir contraseña</label>
-                        <input type="password" class="form-control" id="contraseña2" placeholder="Ingresa tu contraseña">
+                        <input type="password" class="form-control border-0" id="contraseña2" placeholder="Ingresa tu contraseña">
                     </div>
                 </div>
             
-                <label for="avatar" class="form-label fs-5 mt-4">Elegi tu avatar!</label>
-                <div class="row align-items-center p-3 mb-3" id="seleccion-avatar">
+                <label for="avatar" class="form-label fs-5 mt-3 mb-0">Elegi tu avatar!</label>
+                <div class="row align-items-end p-0 mb-3" id="seleccion-avatar">
                     <div class="col m-0 align-items-center text-center form-check-inline">
-                        <img class="img mb-2" id="imagen1" src="placeholder.png"><br> 
+                        <img class="img mb-2" id="imagen1" src="../Imagenes/Avatares/Opcion1.png"><br> 
                         <div class="form-check form-check-inline text-center">
                             <input class="form-check-input" type="radio" name="avatar" id="opc1" value="opc1">
-                            <label class="form-check-label" for="opc1">Opción 1!</label>
+                            <label class="form-check-label text-light" for="opc1">Opción 1!</label>
                         </div>
                     </div>
 
                     <div class="col m-0 align-items-center text-center form-check-inline">
-                        <img class="img mb-2" id="imagen2" src="placeholder.png"><br> 
+                        <img class="img mb-2" id="imagen2" src="../Imagenes/Avatares/Opcion2.png"><br> 
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="avatar" id="opc2" value="opc2">
-                            <label class="form-check-label" for="opc2">Opción 2!</label>
+                            <label class="form-check-label text-light" for="opc2">Opción 2!</label>
                         </div>
                     </div>
                     
@@ -58,11 +59,11 @@
                         <img class="img mb-2" id="imagen3" src="placeholder.png"><br> 
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="avatar" id="opc3" value="opc3">
-                            <label class="form-check-label" for="opc3">Opción 3!</label>
+                            <label class="form-check-label text-light" for="opc3">Opción 3!</label>
                         </div>
                     </div>
                 </div>
-                <button id="boton" type="submit" class="btn btn-success px-5 py-2">¡Crear usuario!</button>
+                <button id="boton" type="submit" class="btn btn-success px-5 py-2" style="background-color:#23352A;border:none;">¡Crear usuario!</button>
             </form>
         </main>
 

@@ -28,9 +28,13 @@ body{
   align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #ece6c2;
-  /* background-image: url(placeholder.png); */
+  background-color: #599815;
+  background: url(../Imagenes/Fondos/Nivel_1/Arboles.png) center bottom repeat-x,
+              url(../Imagenes/Fondos/Nivel_1/Cielo.png) center bottom repeat-x,
+              #99DDB6;
+  background-size: auto 50%, auto 90%;
 }
+
 
 .form-signin {
     width: 100%;
@@ -41,4 +45,5 @@ body{
 
 img{
     width: 70%;
+    height: auto;
 }
