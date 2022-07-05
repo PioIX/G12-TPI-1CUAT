@@ -62,8 +62,9 @@ body,html{
     background-color: #283618;
     float: right;
     position: relative;
-    background: url(../Imagenes/Fondos/Mapa/tile1.png) center bottom repeat;
-    background-size: 10%;
+    background: url(../Imagenes/Fondos/Mapa/q.png) center bottom no-repeat;
+    background-size:cover;
+    border-left: #ece6c2 7px solid;
 }
 
 #informacion, #cuestionario{
