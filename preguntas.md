@@ -49,6 +49,16 @@
   
 >*Texto despues de respuesta: Pampa 2030 es un espacio creado y conformado por diversos actores sociales, con el objetivo de promover la Agenda, monitorear los avances del cumplimiento de los ODS y colaborar en el diseño y ejecución de políticas públicas vinculadas al desarrollo sustentable. Descubrí más en su [sitio web](https://pampa2030.org.ar/)*
 
+6. **¿Qué relación hay entre el cambio climático y el desarrollo sostenible?**
+   - ***Están vinculados entre sí. La retrocesión de uno, afecta al progreso del otro, y viceversa. Además hay muchos ODS que abordan la cuestión climática y sus consecuencias.(Correcta)***
+   - *El desarrollo sostenible fue creado exclusivamente como respuesta a la contaminación del aire y del clima, planteando medidas y redes solidarias en países subdesarrollados como respuesta.*
+   - *Ambas son correctas*
+  
+7. **¿Qué son los ODS?**
+   - ***Un conjunto objetivos globales para la adopción de medidas para buscan poner fin a la pobreza, proteger el planeta y garantizar que todas las personas gocen de paz y prosperidad(Correcta)***
+   - *Es una red de Centros del Desarrollo Sostenible, un organismo que se encarga de articular las medidas de la Agenda en cada país, y su  correcto cumplimiento.*
+   - *Son aquellos Organismos internacionales que, con su accionar, se comprometen a cumplir las metas de la Agenda para el desarrollo sostenible.*
+
 
 ## NIVEL 2 (Especifico de cada ODS):
 
@@ -77,6 +87,10 @@ Para lograrlo se requiere principalmente de  infraestructura, equipamiento y equ
 
 > *Texto despues de respuesta: Esta ley fue sancionada en 2006, y define los derechos y garantías, y al sistema y políticas públicas educativas desde una mirada de igualdad e inclusión. Establece la estructura del Sistema Educativo, haciendo alusión a todos los niveles y modalidades del Sistema Educativo Nacional; determina la extensión de la obligatoriedad escolar y plantea las responsabilidades y obligaciones del Estado Nacional, las Provincias y la Ciudad Autónoma de Buenos Aires en relación a la Educación.
 
+4. **¿ Qué crees que son las becas PROGRESAR?**
+   - ***Buscan acompañar a los jóvenes para que finalicen sus estudios primarios o secundarios, que continúen en la educación superior o se formen profesionalmente (Correcta)***
+   - *Buscan fomentar y fortalecer el encuentro de los niños, niñas y las familias con los libros que habitan las bibliotecas escolares de nuestro país.*
+   - * Buscan ampliar la oferta educativa para el nivel inicial y mejorar de la infraestructura en jardines existentes*
 
 ### Categoria: ODS 10
 
@@ -184,4 +198,27 @@ Para lograrlo se requiere principalmente de  infraestructura, equipamiento y equ
 
 > *Texto despues de respuesta: Este es un dato desalentador teniendo en cuenta que la meta para el 2030 es 12.1% y que la línea de partida fue en 2016 con un 20.5%*
 
+9. **¿Cuál es el porcentaje de de población que declara haber sido víctima de discriminación?**
+   - *67%*
+   - *33%*
+   - ***45%(Correcta)***
+
+> *Texto despues de respuesta: El porcentaje, correspondiente a 2020, aumentó un 12% desde 2016 (33%)*
+
+10. **¿Cuál es el porcentaje de tierras cultivables controladas por solamente el 1% de las explotaciones agrarias?**
+   - *13%*
+   - *65%*
+   - ***36%(Correcta)***
+
+> *El 60% de los alimentos en el mercado local, provienen de agricultores familiares (que poseen solo el 13% de tierras cultivables) *
+
+11. **Para 2022, ¿Qué porcentaje de los fondos otorgados por la ONU a Argentina se le asignó al ODS 15?**
+   - *22.21%*
+   - *1.78%*
+   - ***3.84%(Correcta)***
+
+12. **Para 2022, ¿Qué porcentaje de los fondos otorgados por la ONU a Argentina se le asignó al ODS 10?**
+   - *10.41%*
+   - *22.21%*
+   - ***7.23%(Correcta)***
 [Fuentes](https://github.com/PioIX/G12-TPI-1CUAT/blob/preguntasODS/Fuentes%20de%20las%20preguntas.md)
