@@ -6,6 +6,8 @@
 
 ###  Link del [Presupuesto](https://github.com/PioIX/G12-TPI-1CUAT/blob/preguntasODS/presupuesto.md?plain=1)
 
+### Link del [Replit](https://replit.com/join/nghdssyaqy-lara-malenamale)
+
 #### Breve descripción:
 La propuesta consiste de un juego sobre los ODS con varias preguntas multiple choice, distribuidas en 3 niveles distintos: uno dedicado a la Agenda en sí, 
 otro enfocado en 3 ODS (ODS 4, ODS 10, ODS 15), y el último focalizado en preguntas de conciencia social. El objetivo es permitir al usuario aprender sobre qué es 
