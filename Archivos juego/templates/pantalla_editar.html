@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    </head>
+    <body id="body" style="background-color:#ece6c2">  
+        <header>
+            <nav class="navbar navbar-default navbar-expand-lg navbar-dark" id="nav" style="background-color: #2d2d63;" >
+                <div class="container" style="height:max-content;">                
+                    <div class="collapse navbar-collapse" id="navbarText">
+                        <ul class="navbar-nav me-0 mb-2 mb-lg-0 align-middle ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active fs-5 ms-3" aria-current="page" href="#">Inicio</a> <!-- "../templates/index" -->
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active fs-5 ms-3" href="#">Editar Datos</a> <!-- "../templates/admin/editar" -->
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active fs-5 ms-3 me-0" href="#">Agregar Datos</a> <!-- "../templates/admin/agregar" -->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <main class="container py-3" style="background-color:#ece6c2">
+            <form class="col-12 mb-3 p-3 bg-white rounded shadow-sm" >
+                <p class="fs-4">Elegir pregunta para editar</p>
+                <select class="form-select form-select-lg mb-3" name="opciones" id="opciones" style="height: 75px;">
+
+                </select>
+                
+                <div class="col-12 row g-3 py-1" id="pregunta" style="height: 125px;">
+                    <div class="col-8">
+                        <input class="form-control h-100" type="text" value="Pregunta" id="textoPregunta" readonly>
+                    </div>
+                    <div class="col-2">
+                        <button type="button" class="btn btn-success col-12 h-100" id="editarPregunta">Editar</button>
+                    </div>
+                    <div class="col-2">
+                        <button type="button" class="btn btn-success col-12 h-100" id="borrarPregunta">Borrar</button>
+                    </div>
+                    
+                    
+                </div>
+
+                <div class="col-12 row g-3 py-1" id="rta1"  style="height: 75px;">
+                    <div class="col-8">
+                        <input class="form-control h-100" type="text" value="Respuesta 1" id="textoRta1" readonly>
+                    </div>
+                    <div class="col-2">
+                        <button type="button" class="btn btn-success col-12 h-100" id="editarRta1">Editar</button>
+                    </div>
+                    <div class="col-2">
+                        <button type="button" class="btn btn-success col-12 h-100" id="borrarRta1">Borrar</button>
+                    </div>
+                    
+                    
+                </div>
+
+                <div class="col-12 row g-3 py-1" id="rta2" style="height: 75px;">
+                    <div class="col-8">
+                        <input class="form-control h-100" type="text" value="Respuesta 2" id="textoRta2" readonly>
+                    </div>
+                    <div class="col-2">
+                        <button type="button" class="btn btn-success col-12 h-100" id="editarRta2">Editar</button>
+                    </div>
+                    <div class="col-2">
+                        <button type="button" class="btn btn-success col-12 h-100" id="borrarRta2">Borrar</button>
+                    </div>
+                    
+                    
+                </div>
+
+                <div class="col-12 row g-3 py-1" id="rta3" style="height: 75px;">
+                    <div class="col-8">
+                        <input class="form-control h-100" type="text" value="Respuesta 3" id="textoRta3" readonly>
+                    </div>
+                    <div class="col-2">
+                        <button type="button" class="btn btn-success col-12 h-100" id="editarRta3">Editar</button>
+                    </div>
+                    <div class="col-2">
+                        <button type="button" class="btn btn-success col-12 h-100" id="borrarRta3">Borrar</button>
+                    </div>
+                    
+                    
+                </div>
+
+                <input class="btn btn-primary mt-3 col-12" type="submit" value="Enviar Modificaciones">
+            </form>
+
+        </main>
+    </body>
+</html>

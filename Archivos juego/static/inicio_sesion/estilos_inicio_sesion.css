@@ -28,7 +28,9 @@ body {
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: #ece6c2;
-  /* background-image: url(placeholder.png); */
+  background:url(../imagenes/fondos/fondo_principal.png) repeat-x,
+  #4FAD2D;
+  background-size: contain;
 }
 
 .form-signin {

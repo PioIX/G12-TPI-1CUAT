@@ -13,33 +13,46 @@
 }
 body{
     overflow: overlay;
+
 }
 
 /*------------------------------------------------*/
 
+/* ----------------------- CAJAS BASE ------------------------------*/
 
 body,html{
     background-color:#ece6c2;
     margin: 0 !important;
 }
 
-#aspect-ratio{
-    min-height: 640px;
-    height: 100%;  
+#base{
+    min-height: 640px !important; 
+    background-color: #ece6c2;
+    position: absolute;  
 }
 
-.caja{
-    top: 5%; right:2.5% ; left:2.5%; bottom:5%; 
-    display:flex;
+#aspect-ratio{
+    min-height: 640px !important;
+    height: 100%;
+    position:relative;
+}
+
+
+#container{
+    top: 5%; right:2.5%; left:2.5%; bottom:5%; 
     position: absolute;
     width: 95%;
     height: auto;
+    
 }
 
 #main{
     width: 80%;
     height: 100%;
-    background-color: #606C38;
+    background: url(../imagenes/fondos/Pasto.png) center bottom repeat-x,
+                url(../imagenes/fondos/Arboles.png) center 90% repeat-x,
+                url(../imagenes/fondos/Cielo.png) center top repeat-x;
+    background-size: 40%, 80%, 55%;
     float:left;
     position: relative;
 }
@@ -47,16 +60,19 @@ body,html{
 #mapa{
     width: 20%;
     height: auto;
-    background-color: #283618;
+    background-color: #23352A;
     float: right;
     position: relative;
+    background: url(../imagenes/fondos/mapa.png) center bottom no-repeat;
+    background-size:cover;
+    border-left: #ece6c2 7px solid;
 }
 
-#informacion, #cuestionario{
+#informacion{
     width: 80%;
-    height: 75%;
+    height: 85%;
     top: 4%; right: 3.2%;
-    background-color:#ece6c2;
+    background-color:#edede0;
     float:right;
     padding-left: 32px !important; /* el scrollbar agrega 12px y parece que no esta centrado, correccion */
     z-index: 1;
@@ -64,8 +80,13 @@ body,html{
     overflow-y: scroll;   
 }
 
+/* --------------------------------------------------------------------------------------------- */
+
+/* --------------------------------- ELEMENTOS BASE --------------------------------------------*/
+
 #avatar_usuario{
-    width: 20%;
+    width: 15%;
+    height: auto;
     bottom: 2.5%; right: 2%;
     z-index: 3;
     object-fit: cover;
@@ -73,15 +94,15 @@ body,html{
 }
 
 #avatar_maestro{
-    width: 16%;
-    height: 60%;
+    width: 21%;
+    height: auto;
     z-index: 4;
     position: absolute;
-    bottom: 7%; left: 2.5%;
+    bottom: 7%; left:1.5%;
 }
 
 #boton-salir, #boton-admin{
-    background-color: #283618;
+    background-color: #23352A;
     position: absolute;
     top: 81%;
     z-index: 5;
@@ -90,26 +111,45 @@ body,html{
     border:none !important;
 }
 
+.bi-arrow-right-circle{
+    left:60%;
+}
+
+/* ----------------------------------------------------------------------------------------------- */
+
+/* ------------------------------------------ TEORIA --------------------------------------------- */
+
+
+
+/* ----------------------------------------------------------------------------------------------- */
+
+
+
+/* ------------------------------------------- CUESTIONARIO ---------------------------------------*/
+
 #pregunta{
-    background-color: #606C38;
+    background-color: #2C7342;
     width: 100%;
     color:#ece6c2;
 }
 
 .rta{
-    background-color: hsla(74, 33%, 32%, 0.5);
+    background-color: hsla(90, 71%, 35%, 0.5);
     color:#261616;
     margin: 2.5% 0px;
 }
 
 .form-check-input:checked{
-    background-color:#283618 !important;
+    background-color:#23352A !important;
 }
 
 #enviar{
-    background-color: #283618;
+    background-color: #23352A;
     color: #ece6c2;
 }
+
+/* ---------------------------------------------------------------------------------------------- */
+
 
 #final{
     background-color: #606C38;
@@ -118,7 +158,7 @@ body,html{
 #texto{
     width: 60%;
     height: 20%;
-    background-color:#283618;
+    background-color:#23352A;
     top: 6% ; right: 20%; left: 20%;
     position: absolute;
 }
@@ -134,7 +174,7 @@ body,html{
 .boton{
     width: 16%;
     height: 8%;
-    background-color:#283618 !important;
+    background-color:#23352A !important;
     border: none !important;
     position: absolute;
     top: 82%;
