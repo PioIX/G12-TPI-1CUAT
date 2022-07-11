@@ -8,6 +8,13 @@
 
 ### Link del [Replit](https://replit.com/join/nghdssyaqy-lara-malenamale)
 
+### Link del [PythonAnywhere](https://g12tpiods.pythonanywhere.com/)
+> #### Direcciones habilitadas (visualización de templates, no funcional):
+> - '/' : index, pantalla principal
+> - '/sesion' : inicio de sesion
+> - '/crearUser' : creación de usuario 
+> - '/juego' : pantalla del juego princiapl
+
 #### Breve descripción:
 La propuesta consiste de un juego sobre los ODS con varias preguntas multiple choice, distribuidas en 3 niveles distintos: uno dedicado a la Agenda en sí, 
 otro enfocado en 3 ODS (ODS 4, ODS 10, ODS 15), y el último focalizado en preguntas de conciencia social. El objetivo es permitir al usuario aprender sobre qué es 
