@@ -28,27 +28,27 @@ body, html{
 }
 
 #inicio{
-    background: url(../Imagenes/Fondos/Nivel_1/Arboles.png) center bottom repeat-x,
-                url(../Imagenes/Fondos/Nivel_1/Cielo.png) center bottom repeat-x,
-                #99DDB6;
-    background-size: auto 50%, auto 90%;
+    background-color: #4FAD2D;
+    background-image: url(../imagenes/fondos/fondo_principal.png);
+    background-repeat:  repeat-x;
+    background-size: contain;
     width: auto;
-    height: 75vh;
-}
-
-#head{
+    height: 650px;
     overflow: hidden;
-    transition: transform .4s;
+ 
 }
 
-#opacidad{
-    opacity: 0;
+
+#inicio:hover{
+    background-image: linear-gradient(rgba(219, 215, 107, 0.3),rgba(219, 215, 107, 0.3)), url(../imagenes/fondos/fondo_principal.png);
+    background-repeat: no-repeat,  repeat-x;
+    background-size: contain;
+    
 }
 
-#head:hover #opacidad{
-    transition:all 0.5s;
-    -webkit-transition: all 0.5s;
-    opacity: 0.3;
+#inicio:hover #logo{
+    transition: transform 125ms;
+    transform: translateY(-10px);
 }
 
 #inicio_sesion{
@@ -59,19 +59,27 @@ body, html{
     border-radius: 10px;
     border: 0px;
     font-size: 20px;
-
+    position: absolute;
     box-shadow: inset, 10px 10px 8px #23352A;
 }
 
 #divInfo1{
     background-color: #59981A;
+
+
 }
 
 #divInfo2{
-    background-color: #2C7342;
+    background: #2C7342;
+
 }
 
 #info{
     color:#ece6c2;
 }
 
+#logo{
+    max-width: 60%;
+    will-change: transform;
+    transition: transform 450ms;
+}

@@ -28,10 +28,9 @@ body {
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: #ece6c2;
-  background: url(../Imagenes/Fondos/Nivel_1/Arboles.png) center bottom repeat-x,
-              url(../Imagenes/Fondos/Nivel_1/Cielo.png) center bottom repeat-x,
-            #99DDB6;
-  background-size: auto 50%, auto 90%;
+  background:url(../imagenes/fondos/fondo_principal.png) repeat-x,
+  #4FAD2D;
+  background-size: contain;
 }
 
 .form-signin {
