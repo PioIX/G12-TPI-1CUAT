@@ -41,61 +41,50 @@
                     <input type="text" class="form-control mt-0 mb-2" placeholder="Ingrese la pregunta que quiere agregar">
                     <div class="row g-3">
                         <div class="col">
-                            <label for="formGroupExampleInput" class="form-label mb-0">Categoria</label>
-                            <select class="form-select" name="opciones" id="opciones">
-                                <option selected>Elegir una categoria...</option>
-                                <option>Agenda 2030</option>
-                                <option>ODS 4: Educacion</option>
-                                <option>ODS 10: Reduccion de las desigualdades</option>
-                                <option>ODS 15: Vida de ecosistemas terrestres</option>
-                                <option>Estadistica</option>
+                            <label for="categoria" class="form-label mb-0">Categoria</label>
+                            <select class="form-select" name="categoria" id="categoria">
+                                <option value="" selected>Elegir una categoria...</option>
+                                <option value="">Agenda 2030</option>
+                                <option value="">ODS 4: Educacion</option>
+                                <option value="">ODS 10: Reduccion de las desigualdades</option>
+                                <option value="">ODS 15: Vida de ecosistemas terrestres</option>
+                                <option value="estadistica">Estadistica</option>
                             </select>
                         </div>
                         <div class="col">
-                            <label for="formGroupExampleInput" class="form-label mb-0">Nivel</label>
-                            <select class="form-select" name="opciones" id="opciones">
-                                <option selected>Elegir un nivel...</option>
-                                <option>Nivel 1: Introduccion a la Agenda</option>
-                                <option>Nivel 2: Informacion sobre los ODS</option>
-                                <option>Nivel 3: Bonus, estadísticas</option>
+                            <label for="nivel" class="form-label mb-0">Nivel</label>
+                            <select class="form-select" name="nivel" id="nivel">
+                                <option value="null" selected>Elegir un nivel...</option>
+                                <option value="1">Nivel 1: Introduccion a la Agenda</option>
+                                <option value="2">Nivel 2: Informacion sobre los ODS</option>
+                                <option value="3">Nivel 3: Bonus, estadísticas</option>
                             </select>
                         </div>
                     </div>
 
-                    <div class="d-inline-flex mt-3 p-3 rounded-3" style="    background-color: #93af77;">
+                    <div class="d-inline-flex mt-3 p-3 rounded-3" style="background-color: #93af77;">
                         <label for="formGroupExampleInput" class="form-label me-4 mb-0">Tipo de pregunta</label>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input mb-0" type="radio" value="choice" name="tipoPregunta">
-                            <label class="form-check-label mb-0" for="inlineRadio1">Multiple choice (3 respuestas)</label>
+                            <input class="form-check-input mb-0" type="radio" value="choice" name="tipoPregunta" onchange="cantidadRespuestas()">
+                            <label class="form-check-label mb-0" for="choice">Multiple choice (3 respuestas)</label>
                         </div>
                         
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input mb-0" type="radio" value="vof" name="tipoPregunta">
-                            <label class="form-check-label mb-0" for="inlineRadio2">Verdadero o falso (2 respuestas)</label>
+                            <input class="form-check-input mb-0" type="radio" value="vof" name="tipoPregunta" onchange="cantidadRespuestas()">
+                            <label class="form-check-label mb-0" for="vof">Verdadero o falso (2 respuestas)</label>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 rounded-3 p-3 mb-3 bg-white rounded shadow-sm" id="respuesta">
-                    <div class="row g-3">
-                        <div class="col-11">
-                            <label for="formGroupExampleInput" class="form-label mb-0">Respuesta</label>
-                             <input type="text" class="form-control mt-0 mb-2" placeholder="Ingrese la respuesta que quiere agregar">
-                        </div>
-                        <div class="col-1 ">
-                            <label for="formGroupExampleInput" class="form-label mb-0">Correcta?</label> <br>
-                            <input class="form-check-input h-50 w-50" type="checkbox" value="" id="flexCheckDefault">
-                        </div>
-                    </div>
-                </div>
+                <div id="respuestas">
 
-               
+                </div>
                 
                 
-              
-                <input class="btn btn-primary mt-3 col-12" type="submit" value="Enviar Modificaciones">
             </form>
 
         </main>
+
+        <script src="../static/admin/agregarDatos.js"></script>
     </body>
 </html>
