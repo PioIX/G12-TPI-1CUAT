@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../static/admin/estilos_admin_agregar.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    </head>
+    <body id="body" style="background-color:#ece6c2">  
+        <header>
+            <nav class="navbar navbar-default navbar-expand-lg navbar-dark" id="nav" style="background-color: #23352A;" >
+                <div class="container" style="height:max-content;">                
+                    <div class="collapse navbar-collapse" id="navbarText">
+                        <ul class="navbar-nav me-0 mb-2 mb-lg-0 align-middle ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active fs-5 ms-3" aria-current="page" href="#">Inicio</a> <!-- "../templates/index" -->
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active fs-5 ms-3" href="#">Editar Datos</a> <!-- "../templates/admin/editar" -->
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active fs-5 ms-3 me-0" href="#">Agregar Datos</a> <!-- "../templates/admin/agregar" -->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <main class="container py-3" style="background-color:#ece6c2">
+            <div class="col-12 rounded-3 p-4 mb-3" style="background-color: #2C7342;">
+                <p class="fs-4 p-0 m-0 text-light">Agregar una pregunta</p>
+                <p class="fs-6 p-0 m-0 text-light">Mediante el siguiente form se agregan preguntas a la base de datos. Completar todos los datos indicados. La cantidad de respuestas se determina en base al tipo de pregunta.</p>
+            </div>
+
+            <form>
+
+                <div class="col-12 rounded-3 p-3 mb-3 bg-white rounded shadow-sm" id="pregunta">
+                    
+                    <label for="formGroupExampleInput" class="form-label mb-0">Pregunta</label>
+                    <input type="text" class="form-control mt-0 mb-2" placeholder="Ingrese la pregunta que quiere agregar">
+                    <div class="row g-3">
+                        <div class="col">
+                            <label for="formGroupExampleInput" class="form-label mb-0">Categoria</label>
+                            <select class="form-select" name="opciones" id="opciones">
+                                <option selected>Elegir una categoria...</option>
+                                <option>Agenda 2030</option>
+                                <option>ODS 4: Educacion</option>
+                                <option>ODS 10: Reduccion de las desigualdades</option>
+                                <option>ODS 15: Vida de ecosistemas terrestres</option>
+                                <option>Estadistica</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label for="formGroupExampleInput" class="form-label mb-0">Nivel</label>
+                            <select class="form-select" name="opciones" id="opciones">
+                                <option selected>Elegir un nivel...</option>
+                                <option>Nivel 1: Introduccion a la Agenda</option>
+                                <option>Nivel 2: Informacion sobre los ODS</option>
+                                <option>Nivel 3: Bonus, estadísticas</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="d-inline-flex mt-3 p-3 rounded-3" style="    background-color: #93af77;">
+                        <label for="formGroupExampleInput" class="form-label me-4 mb-0">Tipo de pregunta</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input mb-0" type="radio" value="choice" name="tipoPregunta">
+                            <label class="form-check-label mb-0" for="inlineRadio1">Multiple choice (3 respuestas)</label>
+                        </div>
+                        
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input mb-0" type="radio" value="vof" name="tipoPregunta">
+                            <label class="form-check-label mb-0" for="inlineRadio2">Verdadero o falso (2 respuestas)</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 rounded-3 p-3 mb-3 bg-white rounded shadow-sm" id="respuesta">
+                    <div class="row g-3">
+                        <div class="col-11">
+                            <label for="formGroupExampleInput" class="form-label mb-0">Respuesta</label>
+                             <input type="text" class="form-control mt-0 mb-2" placeholder="Ingrese la respuesta que quiere agregar">
+                        </div>
+                        <div class="col-1 ">
+                            <label for="formGroupExampleInput" class="form-label mb-0">Correcta?</label> <br>
+                            <input class="form-check-input h-50 w-50" type="checkbox" value="" id="flexCheckDefault">
+                        </div>
+                    </div>
+                </div>
+
+               
+                
+                
+              
+                <input class="btn btn-primary mt-3 col-12" type="submit" value="Enviar Modificaciones">
+            </form>
+
+        </main>
+    </body>
+</html>
