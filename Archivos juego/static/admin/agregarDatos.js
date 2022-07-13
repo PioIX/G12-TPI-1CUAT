@@ -26,7 +26,7 @@ function mostrarFormRespuestas(eleccion){
         `;
     };
 
-    forms += `<input class="btn btn-primary col-12" value="Enviar Nueva Pregunta" type="submit">`
+    forms += `<input class="btn btn-primary col-12" value="Enviar Nueva Pregunta" type="submit" onclick="validacion()" data-dismiss="modal">`
     return document.getElementById('respuestas').innerHTML = forms;
 }
 
@@ -64,14 +64,13 @@ function validar(){
             - Nivel 3 --> Categoría Estadísticas`
         alert.show()
     };
-    console.log('a')
+
 
 }
 
 // ----------- VALIDACION BOOTSTRAP ------------
 
-(function () {
-    'use strict'
+function validacion() {
   
     // Fetch all the forms we want to apply custom Bootstrap validation styles to
     var forms = document.querySelectorAll('.needs-validation')
@@ -79,17 +78,20 @@ function validar(){
     // Loop over them and prevent submission
     Array.prototype.slice.call(forms)
     .forEach(function (form) {
+        
         form.addEventListener('submit', function (event) {
-            if (!form.checkValidity()) {
+            
+            if (!form.checkValidity() || !validacionManual()) {
                 event.preventDefault()
                 event.stopPropagation()
             }
-
-            form.classList.add('was-validated')
+            
+            form.classList.add('was-validated');
+            
         }, false)
     })
-    validacionManual();
-})()
+    
+}
 
 // ---------------------------------------------
 
@@ -102,8 +104,10 @@ function validacionManual(){
 
     let alert = new bootstrap.Modal(document.getElementById('alert'))
 
+    
     switch(nivelPregunta){
         case '1':
+            console.log('a')
             if(categoriaPregunta !== 'Agenda 2030'){
                 document.getElementById('alertBody').innerHTML = `
                 La opción de <i>Categoría</i> y <i>Nivel</i> seleccionadas no son compatibles entre sí. Tenga en cuenta lo siguiente:
@@ -111,6 +115,7 @@ function validacionManual(){
                 - Nivel 2 --> Categoría ODS 4, ODS 10, ODS 15
                 - Nivel 3 --> Categoría Estadísticas`
                 alert.show()
+                return false
             }
             break;
         case '2':
@@ -121,6 +126,7 @@ function validacionManual(){
                 - Nivel 2 --> Categoría ODS 4, ODS 10, ODS 15
                 - Nivel 3 --> Categoría Estadísticas`
                 alert.show()
+                return false
             }
             break;
         case 'bonus':
@@ -131,10 +137,12 @@ function validacionManual(){
                 - Nivel 2 --> Categoría ODS 4, ODS 10, ODS 15<br>
                 - Nivel 3 --> Categoría Estadísticas`
                 alert.show()
+                return false
             }
             break;
                
     }
+    return true
 }
 
 // ---------------------------------------------
