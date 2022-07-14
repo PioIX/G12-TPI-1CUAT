@@ -20,7 +20,7 @@ body{
 body, html{
     background-color: #ece6c2;
     border: 0 !important;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 #main{
@@ -53,10 +53,13 @@ body, html{
     height: 100vh;
     width: 200vw;
     animation: slide 15s linear infinite;
+    z-index:1;
 }
 
 
-
+.navbar{
+    z-index: 2;
+}
 
 #inicio_sesion{
     width: 170px;
@@ -89,4 +92,9 @@ body, html{
     max-width: 60%;
     will-change: transform;
     transition: transform 450ms;
+}
+
+.btn:focus {
+    outline: none !important;
+    box-shadow: none !important;
 }
