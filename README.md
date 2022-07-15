@@ -17,7 +17,7 @@ El puntaje final se presentará en la pantalla final del juego y no será acumul
   
 No se necesita descargar o instalar ningún archivo para poder jugarlo.
 ## Índice
-- ### Link de la app de [Flask](https://replit.com/join/nghdssyaqy-lara-malenamale)
+- ### Link del repositorio de [Flask](https://github.com/PioIX/G12-FLASK.git)
 
 - ###  Link del [Presupuesto](https://github.com/PioIX/G12-TPI-1CUAT/blob/preguntasODS/presupuesto.md?plain=1)
 
