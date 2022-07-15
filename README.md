@@ -17,17 +17,11 @@ El puntaje final se presentará en la pantalla final del juego y no será acumul
   
 No se necesita descargar o instalar ningún archivo para poder jugarlo.
 ## Índice
-- ### Link del repositorio de [Flask](https://github.com/PioIX/G12-FLASK.git)
+- ### Link del repositorio de [Flask](https://github.com/PioIX/G12-FLASK)
 
 - ###  Link del [Presupuesto](https://github.com/PioIX/G12-TPI-1CUAT/blob/preguntasODS/presupuesto.md?plain=1)
 
-- ### Link del [PythonAnywhere](https://g12tpiods.pythonanywhere.com/)
-    > #### Direcciones habilitadas (visualización de templates, no funcional):
-    > - '/' : index, pantalla principal
-    > - '/sesion' : inicio de sesion
-    > - '/crearUser' : creación de usuario 
-    > - '/juego' : pantalla del juego principal
-- ### [Base de datos del Juego](https://github.com/PioIX/G12-TPI-1CUAT/blob/main/proyecto.db)
+- ### [Base de datos del Juego](https://github.com/PioIX/G12-FLASK/blob/main/dataBase.db)
     > Contiene 3 tablas con los datos del usuario, las preguntas y las respuestas.
 - ### [Carpeta con los Archivos del Juego](https://github.com/PioIX/G12-TPI-1CUAT/tree/main/Archivos%20juego)
     > Aquí estan guardados los templates de cada pantalla del juego, sus archivos css y js correscponidentes, y las [imagenes](https://github.com/PioIX/G12-TPI-1CUAT/tree/main/Archivos%20juego/static/imagenes), guardadas en la carpeta homónima.
