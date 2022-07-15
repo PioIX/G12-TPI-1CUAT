@@ -19,7 +19,7 @@ No se necesita descargar o instalar ningún archivo para poder jugarlo.
 ## Índice
 - ### Link del repositorio de [Flask](https://github.com/PioIX/G12-FLASK)
 
-- ###  Link del [Presupuesto](https://github.com/PioIX/G12-TPI-1CUAT/blob/preguntasODS/presupuesto.md?plain=1)
+- ###  Link del [Presupuesto](https://github.com/PioIX/G12-TPI-1CUAT/blob/preguntasODS/presupuesto.md)
 
 - ### [Base de datos del Juego](https://github.com/PioIX/G12-FLASK/blob/main/dataBase.db)
     > Contiene 3 tablas con los datos del usuario, las preguntas y las respuestas.
