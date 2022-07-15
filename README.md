@@ -19,7 +19,7 @@ para avanzar. Sin embargo, esto determinará la cantidad de puntaje final que ob
 El puntaje final se presentará en la pantalla final del juego y no será acumulable con partidas anteriores. Habrá una tabla de rankings, con los puntajes más altos.
   
 No se necesita descargar o instalar ningún archivo para poder jugarlo.
-
+#  
 ### Link de la app de [Flask](https://replit.com/join/nghdssyaqy-lara-malenamale)
 
 ###  Link del [Presupuesto](https://github.com/PioIX/G12-TPI-1CUAT/blob/preguntasODS/presupuesto.md?plain=1)
@@ -31,11 +31,17 @@ No se necesita descargar o instalar ningún archivo para poder jugarlo.
 > - '/sesion' : inicio de sesion
 > - '/crearUser' : creación de usuario 
 > - '/juego' : pantalla del juego principal
-
+#  
 ## Índice
 - ### [Base de datos del Juego](https://github.com/PioIX/G12-TPI-1CUAT/blob/main/proyecto.db)
-      Contiene 3 tablas con los datos del usuario, las preguntas y las respuestas.
+    > Contiene 3 tablas con los datos del usuario, las preguntas y las respuestas.
 - ### [Carpeta con los Archivos del Juego](https://github.com/PioIX/G12-TPI-1CUAT/tree/main/Archivos%20juego)
+    > Aquí estan guardados los templates de cada pantalla del juego, sus archivos css y js correscponidentes, y las [imagenes](https://github.com/PioIX/G12-TPI-1CUAT/tree/main/Archivos%20juego/static/imagenes), guardadas en la carpeta homónima.
+- ### [Diálogos, Puntaje e Historia](https://github.com/PioIX/G12-TPI-1CUAT/blob/main/Dialogos%2C%20historia%2C%20etc/Historia%2C%20Di%C3%A1logos%20y%20puntajes.md)
+    > En este archivo hay una descripción de la historia que atraviesa al juego, los diálogos que se darán entre el guia del juego y el usuario, y los puntos de cada pregunta
+- ### [Las Preguntas](https://github.com/PioIX/G12-TPI-1CUAT/blob/main/Dialogos%2C%20historia%2C%20etc/preguntas.md)
+- ### [La Teoría que sirve para responder las preguntas](https://github.com/PioIX/G12-TPI-1CUAT/blob/main/Dialogos%2C%20historia%2C%20etc/Teoria%20para%20las%20preguntas.md)
+- ### [Las Fuentes de las preguntas](https://github.com/PioIX/G12-TPI-1CUAT/blob/main/Dialogos%2C%20historia%2C%20etc/Fuentes%20de%20las%20preguntas.md)
 
 
 
