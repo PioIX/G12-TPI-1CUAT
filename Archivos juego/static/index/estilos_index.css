@@ -17,10 +17,11 @@ body{
 
 /*------------------------------------------------*/
 
+/* ------------------------ FONDO ----------------------- */
 body, html{
     background-color: #ece6c2;
     border: 0 !important;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 #main{
@@ -31,7 +32,7 @@ body, html{
     height: 100vh;
     width: 100vw;
     overflow: hidden;
-    
+    background-color: #74c9d5;
 }
 
 #inicio:hover #logo{
@@ -49,44 +50,42 @@ body, html{
 }
 
 #fondo_loop{
-    background:url(../imagenes/fondos/fondo_index.png) repeat-x;
+
+    background:url(../imagenes/fondos/fondo_index.png) repeat-x bottom;
+    background-size: 100vw auto;
     height: 100vh;
     width: 200vw;
     animation: slide 15s linear infinite;
     z-index:1;
 }
 
-
 .navbar{
     z-index: 2;
-}
-
-#inicio_sesion{
-    width: 170px;
-    height: 60px;
-    background-color:#23352A ;
-    text-shadow:  #23352A;
-    border-radius: 10px;
-    border: 0px;
-    font-size: 20px;
     position: absolute;
-    box-shadow: inset, 10px 10px 8px #23352A;
 }
 
-#divInfo1{
-    background-color: #59981A;
+/* ------------------------------------------------------ */
 
-
+#infoProyecto{
+    width: 60% !important;
+    background: url(../imagenes/avatares/guia.png) no-repeat bottom left,
+                url(../imagenes/fondos/offcanvas.png) no-repeat;
+    background-position: 0 90%,  10%;
+    background-size: 25%, 100% 100%;
+    border: none !important;
+    padding-left: 15% !important;
 }
 
-#divInfo2{
-    background: #2C7342;
-
+#infoGrupo{
+    width: 30% !important;
+    background: url(../imagenes/avatares/Opcion2.png) no-repeat bottom left,
+                url(../imagenes/fondos/offcanvas.png) no-repeat;
+    background-position: 0 95%,  10%;
+    background-size: 45%, 100% 100%;
+    border: none !important;
+    padding-left: 10% !important;
 }
 
-#info{
-    color:#ece6c2;
-}
 
 #logo{
     max-width: 60%;
@@ -94,7 +93,7 @@ body, html{
     transition: transform 450ms;
 }
 
-.btn:focus {
+.btn:focus, .btn-close:focus {
     outline: none !important;
     box-shadow: none !important;
 }

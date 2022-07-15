@@ -25,85 +25,50 @@
                           <button type="button" class="nav-link active fs-5 ms-3 btn btn-link text-light" data-bs-toggle="offcanvas" data-bs-target="#infoProyecto" aria-controls="offcanvasRight">Sobre el proyecto </button> <!-- "../templates/index" -->
                       </li>
                       <li class="nav-item">
-                          <button type="button" class="nav-link active fs-5 ms-3 btn btn-link text-light" href="#">Sobre el equipo</button> <!-- "../templates/admin/editar" -->
+                          <button type="button" class="nav-link active fs-5 ms-3 btn btn-link text-light" data-bs-toggle="offcanvas" data-bs-target="#infoGrupo" aria-controls="offcanvasRight">Sobre el equipo</button> <!-- "../templates/admin/editar" -->
                       </li>
                       <li class="nav-item">
                           <button type="button" class="nav-link active fs-5 ms-3 btn btn-link text-light" href="#">¡Inicia sesion!</button> <!-- "../templates/admin/agregar" -->
                       </li>
                   </ul>
               </div>
-                
-              
-
               </div>
             </nav>
-            <div id="fondo_loop" class="position-absolute">
-              
-            </div>
-            
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="infoProyecto" aria-labelledby="offcanvasRightLabel">
-              <div class="offcanvas-header">
+
+            <div class="offcanvas offcanvas-end pe-5" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="infoProyecto" aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas-header justify-content-md-end p-0">
+                <button type="button" class="btn-close text-reset p-5" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
                 <p id="infoProyectoTitulo" class="text-start fs-1 lh-base mt-auto mb-2"> Sobre el proyecto!</p>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body">
                 <p id="info" class="text-start fs-5 lh-base mt-auto mb-0"> Este proyecto fue realizado por alumnas del colegio Pio IX y en él encontrarás una propuesta didáctica y pedagógica para aprender y difundir conceptos y novedades sobre la Agenda 2030 y sus 17 ODS. Esta aplicación web está orientada a un público desconocedor del tema y principalmente hacia jóvenes de entre 10 a 15 años, intentando de este modo ofrecer información en un formato más atractivo y educativo para individuos de dicha edad. Sin embargo la experiencia no es excluyente a personas mayores que deseen investigar más sobre las propuestas. Así que te invitamos a adentrarte en el camino al desarrollo sustentable, donde profundizaremos en los conocimientos básicos de los ODS y su historia, conociendo sus aplicaciones en Argentina y el mundo, con trivias desafiantes y personajes inolvidables.
-                  <br>Registrate y empieza a jugar, ESPERAMOS QUE LO DIFRUTES :) </p>
+                  <br><br>Registrate y empieza a jugar, ESPERAMOS QUE LO DIFRUTES :) </p>
+                  
               </div>
             </div>
 
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="infoEquipo" aria-labelledby="offcanvasRightLabel">
-              <div class="offcanvas-header">
-                <h5 id="tituloInfoEquipo">Offcanvas right</h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <div class="offcanvas offcanvas-end pe-5" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="infoGrupo" aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas-header justify-content-md-end p-0">
+                <button type="button" class="btn-close text-reset p-5" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
               <div class="offcanvas-body">
-                
+                <p id="infoProyectoTitulo" class="text-start fs-1 lh-base mt-auto mb-2">  Sobre el equipo!</p>
+                <p id="info" class="text-start fs-5 lh-base mt-auto mb-0"> Nosotras somos Rosario Martín Seijo, Lara Puelman, Victoria Stagno y Oriana Toscano Trillo de 5B Informática del colegio Pio IX.
+                  <br>Ante cualquier consulta te brindamos nuestro mail para que nos contactes. </p>
+                  
               </div>
             </div>
 
+            <div id="fondo_loop" class="position-absolute"></div>
+            
+            
 
-            <!-- <img src="../static/imagenes/logo.png" id="logo" class="mt-5"> -->
-            <button id="inicio_sesion" type="button" class="btn btn-success position-absolute bottom-0 start-50 translate-middle mb-5" >
-              <a href={{ url_for('iniciar_sesion') }} style="text-decoration: none; color:#ece6c2;">Iniciar sesion</a>
-            </button>
+
+          
 
           </div>
         </div>
     </header>
-
-    <main>
-    <div id="main" class="container-fluid m-0 p-0 text-center">
-      <button type="button" class="btn shadow-none mt-4 ms-0" onClick="document.getElementById('divInfo1').scrollIntoView();">
-          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#23352A" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
-            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
-          </svg>
-      </button>
-
-
-      <div id="divInfo1" class="col-auto m-4 p-4 row align-items-end justify-content-center rounded-3">
-          <div  class="col-xxl-9 col-md-8 inline-block m-4 p-3">
-            <p id="info" class="text-start fs-1 lh-base mt-auto mb-2"> Sobre el proyecto!</p>
-            <p id="info" class="text-start fs-5 lh-base mt-auto mb-0"> Este proyecto fue realizado por alumnas del colegio Pio IX y en él encontrarás una propuesta didáctica y pedagógica para aprender y difundir conceptos y novedades sobre la Agenda 2030 y sus 17 ODS. Esta aplicación web está orientada a un público desconocedor del tema y principalmente hacia jóvenes de entre 10 a 15 años, intentando de este modo ofrecer información en un formato más atractivo y educativo para individuos de dicha edad. Sin embargo la experiencia no es excluyente a personas mayores que deseen investigar más sobre las propuestas. Así que te invitamos a adentrarte en el camino al desarrollo sustentable, donde profundizaremos en los conocimientos básicos de los ODS y su historia, conociendo sus aplicaciones en Argentina y el mundo, con trivias desafiantes y personajes inolvidables.
-              <br>Registrate y empieza a jugar, ESPERAMOS QUE LO DIFRUTES :) </p>
-
-          </div>
-          <img src="../static/imagenes/avatares/guia3.png" class="col-xxl-2 col-md-2 inline-block m-4 p-0 text-center">
-
-      </div>
-
-      <div id="divInfo2" class="col-auto m-4 p-4 row align-items-end justify-content-center rounded-3">
-          <img src="../static/imagenes/avatares/Opcion2.png" class="col-xxl-2 col-md-2 inline-block m-4 p-0 text-center">
-          <div class="col-xxl-9 col-md-8 inline-block m-4 p-3 text-center">
-            <p id="info" class="text-start fs-1 lh-base mt-auto mb-2"> Sobre el equipo!</p>
-            <p id="info" class="text-start fs-5 lh-base mt-auto mb-0"> Nosotras somos Rosario Martín Seijo, Lara Puelman, Victoria Stagno y Oriana Toscano Trillo de 5B Informática del colegio Pio IX.
-              <br>Ante cualquier consulta te brindamos nuestro mail para que nos contactes. </p>
-          </div>
-
-      </div>
-
-    </div>
-    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="../static/index/index.js"></script>

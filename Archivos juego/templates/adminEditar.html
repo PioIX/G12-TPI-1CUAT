@@ -36,24 +36,130 @@
             <form class="col-12 mb-3 p-3 bg-white rounded shadow-sm" >
                 <label for="opciones" class="form-label mb-0">Preguntas cargadas</label>
                 <select class="form-select form-select mt-0 mb-2" name="opciones" id="opciones">
+                    <optgroup label="Agenda 2030">
+                        <option>...</option>
+                    </optgroup>
+                    <optgroup label="ODS 4">
+                        <option>...</option>
+                    </optgroup>
+                    <optgroup label="ODS 10">
+                        <option>...</option>
+                    </optgroup>
+                    <optgroup label="ODS 15">
+                        <option>...</option>
+                    </optgroup>
+                    <optgroup label="Estadistica">
+                        <option>...</option>
+                    </optgroup>
                 </select>
                 
                 <div id="preguntaCargada col-12">
                     <div class="row g-3">
                         <div class="col-11">
-                            <label for="rta${i}" class="form-label mb-0">Pregunta</label>
-                            <input class="form-control" type="text" value="Pregunta" id="textoPregunta" readonly>
+                            <label for="textoPregunta" class="form-label mb-0">Pregunta</label>
+                            <input class="form-control mb-2" type="text" value="Pregunta" id="textoPregunta" readonly>
                         </div>
                         <div class="col-1 ">
-                            <label for="correcto${i}" class="form-label mb-0"></label> <br>
-                            <input class="btn btn-primary col-12" value="Editar">
+                            <label for="editarPregunta" class="form-label mb-0"></label> <br>
+                            <input class="btn btn-primary col-12 mb-2" value="Editar">
                         </div>
                     </div>
 
-                    
+                    <!-- Las respuestas van a ser inyectadas desde java segun la cantidad de rtas que tenga la pregunta -->
+                    <div class="row g-3">
+                        <div class="col-11">
+                            <label for="rta1" class="form-label mb-0">Respuesta 1</label>
+                            <input class="form-control mb-2" type="text" value="Respuesta 1" id="textoPregunta" readonly>
+                        </div>
+                        <div class="col-1 ">
+                            <label for="editarRta1" class="form-label mb-0"></label> <br>
+                            <input class="btn btn-primary col-12 mb-2" value="Editar">
+                        </div>
+                    </div>
 
-
+                    <div class="row g-3">
+                        <div class="col-11">
+                            <label for="rta2" class="form-label mb-0">Respuesta 2</label>
+                            <input class="form-control mb-2" type="text" value="Respuesta 2" id="textoPregunta" readonly>
+                        </div>
+                        <div class="col-1 ">
+                            <label for="editarRta2" class="form-label mb-0"></label> <br>
+                            <input class="btn btn-primary col-12 mb-2" value="Editar">
+                        </div>
+                    </div>
                     
+                    <div class="row g-3">
+                        <div class="col-11">
+                            <label for="rta3" class="form-label mb-0">Respuesta 3</label>
+                            <input class="form-control mb-2" type="text" value="Respuesta 3" id="textoPregunta" readonly>
+                        </div>
+                        <div class="col-1 ">
+                            <label for="editarRta3" class="form-label mb-0"></label> <br>
+                            <input class="btn btn-primary col-12 mb-2" value="Editar">
+                        </div>
+                    </div>
+
+                </div>
+                
+
+                <input class="btn btn-primary mt-3 col-12" type="submit" value="Enviar Modificaciones">
+            </form>
+
+            <div class="col-12 rounded-3 p-4 mb-3" style="background-color: #2C7342;">
+                <p class="fs-4 p-0 m-0 text-light">Borrar una pregunta</p>
+                <p class="fs-6 p-0 m-0 text-light">Elegir la pregunta a eliminar mediante el menu. Una vez seleccionada, se mostraran en pantalla los datos. Presionar el boton <i>Enviar Modificaciones</i> una vez que este seguro para borrar la pregunta y sus respuestas.</p>
+            </div>
+
+            <form class="col-12 mb-3 p-3 bg-white rounded shadow-sm" >
+                <label for="opciones" class="form-label mb-0">Preguntas cargadas</label>
+                <select class="form-select form-select mt-0 mb-2" name="opciones" id="opciones">
+                    <optgroup label="Agenda 2030">
+                        <option>...</option>
+                    </optgroup>
+                    <optgroup label="ODS 4">
+                        <option>...</option>
+                    </optgroup>
+                    <optgroup label="ODS 10">
+                        <option>...</option>
+                    </optgroup>
+                    <optgroup label="ODS 15">
+                        <option>...</option>
+                    </optgroup>
+                    <optgroup label="Estadistica">
+                        <option>...</option>
+                    </optgroup>
+                </select>
+                
+                <div id="preguntaCargada col-12">
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <label for="textoPregunta" class="form-label mb-0">Pregunta</label>
+                            <input class="form-control mb-2" type="text" value="Pregunta" id="textoPregunta" readonly>
+                        </div>
+                        </div>
+
+                    <!-- Las respuestas van a ser inyectadas desde java segun la cantidad de rtas que tenga la pregunta -->
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <label for="rta1" class="form-label mb-0">Respuesta 1</label>
+                            <input class="form-control mb-2" type="text" value="Respuesta 1" id="textoPregunta" readonly>
+                        </div>
+                    </div>
+
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <label for="rta2" class="form-label mb-0">Respuesta 2</label>
+                            <input class="form-control mb-2" type="text" value="Respuesta 2" id="textoPregunta" readonly>
+                        </div>
+                    </div>
+                    
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <label for="rta3" class="form-label mb-0">Respuesta 3</label>
+                            <input class="form-control mb-2" type="text" value="Respuesta 3" id="textoPregunta" readonly>
+                        </div>
+                    </div>
+
                 </div>
                 
 
