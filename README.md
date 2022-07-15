@@ -20,19 +20,17 @@ El puntaje final se presentará en la pantalla final del juego y no será acumul
   
 No se necesita descargar o instalar ningún archivo para poder jugarlo.
 #  
-### Link de la app de [Flask](https://replit.com/join/nghdssyaqy-lara-malenamale)
-
-###  Link del [Presupuesto](https://github.com/PioIX/G12-TPI-1CUAT/blob/preguntasODS/presupuesto.md?plain=1)
-
-### Link del [PythonAnywhere](https://g12tpiods.pythonanywhere.com/)
-
-> #### Direcciones habilitadas (visualización de templates, no funcional):
-> - '/' : index, pantalla principal
-> - '/sesion' : inicio de sesion
-> - '/crearUser' : creación de usuario 
-> - '/juego' : pantalla del juego principal
-#  
 ## Índice
+- ### Link de la app de [Flask](https://replit.com/join/nghdssyaqy-lara-malenamale)
+
+- ###  Link del [Presupuesto](https://github.com/PioIX/G12-TPI-1CUAT/blob/preguntasODS/presupuesto.md?plain=1)
+
+- ### Link del [PythonAnywhere](https://g12tpiods.pythonanywhere.com/)
+    > #### Direcciones habilitadas (visualización de templates, no funcional):
+    > - '/' : index, pantalla principal
+    > - '/sesion' : inicio de sesion
+    > - '/crearUser' : creación de usuario 
+    > - '/juego' : pantalla del juego principal
 - ### [Base de datos del Juego](https://github.com/PioIX/G12-TPI-1CUAT/blob/main/proyecto.db)
     > Contiene 3 tablas con los datos del usuario, las preguntas y las respuestas.
 - ### [Carpeta con los Archivos del Juego](https://github.com/PioIX/G12-TPI-1CUAT/tree/main/Archivos%20juego)
