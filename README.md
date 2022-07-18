@@ -14,8 +14,9 @@ La propuesta consiste de un juego sobre los ODS con varias preguntas multiple ch
 Para jugar el juego se debe crear un usuario e iniciar sesión con él. Una vez que se ingresó al juego, irá respondiendo, en cada nivel, las preguntas que se le 
 presentarán de manera aleatoria. El juego continuará avanzando sin importar que el jugador las responda correcta o incorrectamente, pero es indispensable que se respondan para avanzar. Sin embargo, esto determinará la cantidad de puntaje final que obtenga. 
 El puntaje final se presentará en la pantalla final del juego y no será acumulable con partidas anteriores. Habrá una tabla de rankings, con los puntajes más altos.
-  
 No se necesita descargar o instalar ningún archivo para poder jugarlo.
+
+Los datos de usuario, las preguntas y sus respuestas, y los puntos se alamcenarán en una base de datos SQL. Por otra parte la teoria y los dialogos que brindará el juego estarán alamacenados en una base de datos JSON No SQL.
 ## Índice
 - ### Link del repositorio de [Flask](https://github.com/PioIX/G12-FLASK)
 
