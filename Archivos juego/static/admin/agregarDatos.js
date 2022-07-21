@@ -26,49 +26,14 @@ function mostrarFormRespuestas(eleccion){
         `;
     };
 
-    forms += `<input class="btn btn-primary col-12" value="Enviar Nueva Pregunta" type="submit" onclick="validacion()" data-dismiss="modal">`
+    forms += `<input class="btn btn-success col-12" value="Enviar Nueva Pregunta" type="submit" onclick="validacion()" data-dismiss="modal" data-backdrop="false" style="background-color: #2C7342; border:none"> `
     return document.getElementById('respuestas').innerHTML = forms;
 }
 
-function validar(){
-    let textoPregunta = document.getElementById('textoPregunta').value; 
-    let categoriaPregunta = document.getElementById('categoria').value; 
-    let nivelPregunta = document.getElementById('nivel').value; 
-    // let respuesta1 = document.getElementById('rta1').value;
-    // let respuesta2 = document.getElementById('rta2').value;
-    // let respuesta3 = document.getElementById('rta3').value;
-    // let correcta = document.getElementsByName('correcto');
-
-    let alert = new bootstrap.Modal(document.getElementById('alert'))
-
-    if(textoPregunta.length <= 0){
-        document.getElementById('alertBody').innerHTML = `
-            Falta completar el campo <i>Pregunta</i>. Ingresá el texto de la pregunta que quieras agregar a la base`
-        alert.show()
-    };
-    if(categoriaPregunta == 'null'){
-        document.getElementById('alertBody').innerHTML = `
-            Falta elegir una opcion para el campo <i>Categoria</i>. Seleccioná la categoría correspondiente`
-        alert.show()
-    };
-    if(nivelPregunta == 'null'){
-        document.getElementById('alertBody').innerHTML = `
-        Falta elegir una opcion para el campo <i>Nivel</i>. Seleccioná el nivel correspondiente`
-        alert.show()
-    };
-    if((nivelPregunta == '1' && categoriaPregunta !== 'Agenda 2030') || (nivelPregunta == 'bonus' && categoriaPregunta !== 'Estadísticas')){
-        document.getElementById('alertBody').innerHTML = `
-        Las opciones seleccionadas de <i>Categoría</i> y <i>Nivel</i> no corresponden entre sí. 
-            - Nivel 1 --> Categoría Agenda 2030
-            - Nivel 2 --> Categoría ODS 4, ODS 10, ODS 15
-            - Nivel 3 --> Categoría Estadísticas`
-        alert.show()
-    };
 
 
-}
 
-// ----------- VALIDACION BOOTSTRAP ------------
+// ----------- VALIDACION BOOTSTRAP (GENERAL) ------------
 
 function validacion() {
   
@@ -95,7 +60,7 @@ function validacion() {
 
 // ---------------------------------------------
 
-// ------------- VALIDACION MANUAL -------------
+// ------------- VALIDACION MANUAL (CONCORDANCIA NIVEL-CATEGORIA) -------------
 
 function validacionManual(){
     let categoriaPregunta = document.getElementById('categoria').value; 
@@ -103,45 +68,24 @@ function validacionManual(){
     console.log(categoriaPregunta, nivelPregunta)
 
     let alert = new bootstrap.Modal(document.getElementById('alert'))
+    $(".modal-backdrop").remove();
 
-    
-    switch(nivelPregunta){
-        case '1':
-            console.log('a')
-            if(categoriaPregunta !== 'Agenda 2030'){
-                document.getElementById('alertBody').innerHTML = `
-                La opción de <i>Categoría</i> y <i>Nivel</i> seleccionadas no son compatibles entre sí. Tenga en cuenta lo siguiente:
-                - Nivel 1 --> Categoría Agenda 2030
-                - Nivel 2 --> Categoría ODS 4, ODS 10, ODS 15
-                - Nivel 3 --> Categoría Estadísticas`
-                alert.show()
-                return false
-            }
-            break;
-        case '2':
-            if(categoriaPregunta == 'Agenda 2030' || categoriaPregunta == 'Estadísticas'){
-                document.getElementById('alertBody').innerHTML = `
-                La opción de <i>Categoría</i> y <i>Nivel</i> seleccionadas no son compatibles entre sí. Tenga en cuenta lo siguiente:
-                - Nivel 1 --> Categoría Agenda 2030
-                - Nivel 2 --> Categoría ODS 4, ODS 10, ODS 15
-                - Nivel 3 --> Categoría Estadísticas`
-                alert.show()
-                return false
-            }
-            break;
-        case 'bonus':
-            if(categoriaPregunta !== 'Estadísiticas'){
-                document.getElementById('alertBody').innerHTML = `
-                La opción de <i>Categoría</i> y <i>Nivel</i> seleccionadas no son compatibles entre sí. Tenga en cuenta lo siguiente:<br>
-                - Nivel 1 --> Categoría Agenda 2030 <br>
-                - Nivel 2 --> Categoría ODS 4, ODS 10, ODS 15<br>
-                - Nivel 3 --> Categoría Estadísticas`
-                alert.show()
-                return false
-            }
-            break;
-               
-    }
+    if((nivelPregunta == '1' && categoriaPregunta !== 'Agenda 2030') ||
+       (nivelPregunta == '2' && categoriaPregunta == 'Agenda 2030') || 
+       (nivelPregunta == '2' && categoriaPregunta == 'Estadísticas') ||
+       (nivelPregunta == 'bonus' && categoriaPregunta !== 'Estadísticas'))
+    {
+        document.getElementById('alertBody').innerHTML = `
+        La opción de <i>Categoría</i> y <i>Nivel</i> seleccionadas no son compatibles entre sí. Tenga en cuenta lo siguiente:<br><br>
+        <ul>
+        <li> Nivel 1 --> Categoría Agenda 2030 </li>
+        <li> Nivel 2 --> Categoría ODS 4, ODS 10, ODS 15 </li>
+        <li> Nivel 3 --> Categoría Estadísticas </li>
+        </ul>`
+        alert.show()
+        return false
+    };
+   
     return true
 }
 
