@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../static/admin/estilos_admin_editar.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    </head>
+    <body id="body" style="background-color:#ece6c2">  
+        <header>
+            <nav class="navbar navbar-default navbar-expand-lg navbar-dark" id="nav" style="background-color: #23352A;" >
+                <div class="container" style="height:max-content;">                
+                    <div class="collapse navbar-collapse" id="navbarText">
+                        <ul class="navbar-nav me-0 mb-2 mb-lg-0 align-middle ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active fs-5 ms-3" aria-current="page" href="#">Inicio</a> <!-- "../templates/index" -->
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active fs-5 ms-3" href="#">Editar Datos</a> <!-- "../templates/admin/editar" -->
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active fs-5 ms-3 me-0" href="#">Agregar Datos</a> <!-- "../templates/admin/agregar" -->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <main class="container py-3" style="background-color:#ece6c2">
+
+            <div class="col-12 rounded-3 p-4 mb-3" style="background-color: #2C7342;">
+                <p class="fs-4 p-0 m-0 text-light">Editar una pregunta</p>
+                <p class="fs-6 p-0 m-0 text-light">Elegir la pregunta a editar mediante el menu. Una vez seleccionada, se mostraran en pantalla los datos. Presionar el boton <i>Editar</i> para modificar cada campo</p>
+            </div>
+
+            <form class="col-12 mb-3 p-3 bg-white rounded shadow-sm" >
+                <label for="opciones" class="form-label mb-0">Preguntas cargadas</label>
+                <select class="form-select form-select mt-0 mb-2" name="opciones" id="opciones">
+                    <optgroup label="Agenda 2030">
+                        <option>...</option>
+                    </optgroup>
+                    <optgroup label="ODS 4">
+                        <option>...</option>
+                    </optgroup>
+                    <optgroup label="ODS 10">
+                        <option>...</option>
+                    </optgroup>
+                    <optgroup label="ODS 15">
+                        <option>...</option>
+                    </optgroup>
+                    <optgroup label="Estadistica">
+                        <option>...</option>
+                    </optgroup>
+                </select>
+                
+                <div id="preguntaCargada col-12">
+                    <div class="row g-3">
+                        <div class="col-11">
+                            <label for="textoPregunta" class="form-label mb-0">Pregunta</label>
+                            <input class="form-control mb-2" type="text" value="Pregunta" id="textoPregunta" readonly>
+                        </div>
+                        <div class="col-1 ">
+                            <label for="editarPregunta" class="form-label mb-0"></label> <br>
+                            <input class="btn btn-success col-12 mb-2" value="Editar">
+                        </div>
+                    </div>
+
+                    <!-- Las respuestas van a ser inyectadas desde java segun la cantidad de rtas que tenga la pregunta -->
+                    <div class="row g-3">
+                        <div class="col-11">
+                            <label for="rta1" class="form-label mb-0">Respuesta 1</label>
+                            <input class="form-control mb-2" type="text" value="Respuesta 1" id="textoPregunta" readonly>
+                        </div>
+                        <div class="col-1 ">
+                            <label for="editarRta1" class="form-label mb-0"></label> <br>
+                            <input class="btn btn-success col-12 mb-2" value="Editar">
+                        </div>
+                    </div>
+
+                    <div class="row g-3">
+                        <div class="col-11">
+                            <label for="rta2" class="form-label mb-0">Respuesta 2</label>
+                            <input class="form-control mb-2" type="text" value="Respuesta 2" id="textoPregunta" readonly>
+                        </div>
+                        <div class="col-1 ">
+                            <label for="editarRta2" class="form-label mb-0"></label> <br>
+                            <input class="btn btn-success col-12 mb-2" value="Editar">
+                        </div>
+                    </div>
+                    
+                    <div class="row g-3">
+                        <div class="col-11">
+                            <label for="rta3" class="form-label mb-0">Respuesta 3</label>
+                            <input class="form-control mb-2" type="text" value="Respuesta 3" id="textoPregunta" readonly>
+                        </div>
+                        <div class="col-1 ">
+                            <label for="editarRta3" class="form-label mb-0"></label> <br>
+                            <input class="btn btn-success col-12 mb-2" value="Editar">
+                        </div>
+                    </div>
+
+                </div>
+                
+
+                <input class="btn btn-success mt-3 col-12" type="submit" value="Enviar Modificaciones">
+            </form>
+
+            <div class="col-12 rounded-3 p-4 mb-3" style="background-color: #2C7342;">
+                <p class="fs-4 p-0 m-0 text-light">Borrar una pregunta</p>
+                <p class="fs-6 p-0 m-0 text-light">Elegir la pregunta a eliminar mediante el menu. Una vez seleccionada, se mostraran en pantalla los datos. Presionar el boton <i>Enviar Modificaciones</i> una vez que este seguro para borrar la pregunta y sus respuestas.</p>
+            </div>
+
+            <form class="col-12 mb-3 p-3 bg-white rounded shadow-sm" >
+                <label for="opciones" class="form-label mb-0">Preguntas cargadas</label>
+                <select class="form-select form-select mt-0 mb-2" name="opciones" id="opciones">
+                    <optgroup label="Agenda 2030">
+                        <option>...</option>
+                    </optgroup>
+                    <optgroup label="ODS 4">
+                        <option>...</option>
+                    </optgroup>
+                    <optgroup label="ODS 10">
+                        <option>...</option>
+                    </optgroup>
+                    <optgroup label="ODS 15">
+                        <option>...</option>
+                    </optgroup>
+                    <optgroup label="Estadistica">
+                        <option>...</option>
+                    </optgroup>
+                </select>
+                
+                <div id="preguntaCargada col-12">
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <label for="textoPregunta" class="form-label mb-0">Pregunta</label>
+                            <input class="form-control mb-2" type="text" value="Pregunta" id="textoPregunta" readonly>
+                        </div>
+                        </div>
+
+                    <!-- Las respuestas van a ser inyectadas desde java segun la cantidad de rtas que tenga la pregunta -->
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <label for="rta1" class="form-label mb-0">Respuesta 1</label>
+                            <input class="form-control mb-2" type="text" value="Respuesta 1" id="textoPregunta" readonly>
+                        </div>
+                    </div>
+
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <label for="rta2" class="form-label mb-0">Respuesta 2</label>
+                            <input class="form-control mb-2" type="text" value="Respuesta 2" id="textoPregunta" readonly>
+                        </div>
+                    </div>
+                    
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <label for="rta3" class="form-label mb-0">Respuesta 3</label>
+                            <input class="form-control mb-2" type="text" value="Respuesta 3" id="textoPregunta" readonly>
+                        </div>
+                    </div>
+
+                </div>
+                
+
+                <input class="btn btn-success mt-3 col-12" type="submit" value="Enviar Modificaciones">
+            </form>
+
+        </main>
+    </body>
+</html>

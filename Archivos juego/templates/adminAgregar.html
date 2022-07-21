@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../static/admin/estilos_admin_agregar.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    <body id="body" style="background-color:#ece6c2">  
+        <header>
+            <nav class="navbar navbar-default navbar-expand-lg navbar-dark" id="nav" style="background-color: #23352A;" >
+                <div class="container" style="height:max-content;">                
+                    <div class="collapse navbar-collapse" id="navbarText">
+                        <ul class="navbar-nav me-0 mb-2 mb-lg-0 align-middle ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active fs-5 ms-3" aria-current="page" href="#">Inicio</a> <!-- "../templates/index" -->
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active fs-5 ms-3" href="#">Editar Datos</a> <!-- "../templates/admin/editar" -->
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active fs-5 ms-3 me-0" href="#">Agregar Datos</a> <!-- "../templates/admin/agregar" -->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <main class="container py-3" style="background-color:#ece6c2">
+            <div class="col-12 rounded-3 p-4 mb-3" style="background-color: #2C7342;">
+                <p class="fs-4 p-0 m-0 text-light">Agregar una pregunta</p>
+                <p class="fs-6 p-0 m-0 text-light">Mediante el siguiente form se agregan preguntas a la base de datos. Completar todos los datos indicados. La cantidad de respuestas se determina en base al tipo de pregunta.</p>
+            </div>
+
+            <form class="needs-validation" novalidate>
+
+                <div class="col-12 rounded-3 p-3 mb-3 bg-white rounded shadow-sm" id="pregunta">
+                    
+                    <label for="formGroupExampleInput" class="form-label mb-0">Pregunta</label>
+                    <input type="text" class="form-control mt-0 mb-2" placeholder="Ingrese la pregunta que quiere agregar" id="textoPregunta" required>
+                    <div class="row g-3">
+                        <div class="col">
+                            <label for="nivel" class="form-label mb-0">Nivel</label>
+                            <select class="form-select" name="nivel" id="nivel" required>
+                                <option value="" selected disabled>Elegir un nivel...</option>
+                                <option value="1">Nivel 1: Introduccion a la Agenda</option>
+                                <option value="2">Nivel 2: Informacion sobre los ODS</option>
+                                <option value="bonus">Nivel 3: Bonus, estadísticas</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label for="categoria" class="form-label mb-0">Categoria</label>
+                            <select class="form-select" name="categoria" id="categoria" required>
+                                <option value="" selected disabled>Elegir una categoria...</option>
+                                <option value="Agenda 2030">Agenda 2030</option>
+                                <option value="ODS 4">ODS 4: Educacion</option>
+                                <option value="ODS 10">ODS 10: Reduccion de las desigualdades</option>
+                                <option value="ODS 15">ODS 15: Vida de ecosistemas terrestres</option>
+                                <option value="Estadísticas">Estadistica</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mt-3 p-3 rounded-3 text-center" style="background-color:hsla(104, 59%, 43%, 0.5);">
+                        <label for="formGroupExampleInput" class="form-label me-4 mb-0">Tipo de pregunta</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input mb-0" type="radio" value="choice" name="tipoPregunta" onchange="cantidadRespuestas()">
+                            <label class="form-check-label mb-0" for="choice">Multiple choice (3 respuestas)</label>
+                        </div>
+                        
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input mb-0" type="radio" value="vof" name="tipoPregunta" onchange="cantidadRespuestas()">
+                            <label class="form-check-label mb-0" for="vof">Verdadero o falso (2 respuestas)</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="respuestas">
+                    
+                </div>
+                
+                
+            </form>
+
+            <!-- Modal -->
+            <div class="modal fade" id="alert" tabindex="-1" aria-labelledby="alert" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Error al enviar formulario!</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="$('.modal').modal('hide')"></button>
+                        </div>
+                        <div class="modal-body" id="alertBody"></div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="cerrarModal" onclick="$('.modal').modal('hide')">Ok</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </main>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="../static/admin/agregarDatos.js"></script>
+    </body>
+</html>
