@@ -2,3 +2,11 @@
     background-color: #47a237 !important;
     border: none !important;
 }
+
+[data-correcto = '0']:read-only{
+    background-color: hsla(111, 49%, 43%, 0.5) !important;
+}
+
+[data-correcto = '0']{
+    background-color: hsla(111, 49%, 43%, 0.2) !important;
+}

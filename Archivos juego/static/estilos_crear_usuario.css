@@ -1,0 +1,49 @@
+/* ---------- MODIFICA SCROLL BAR ----------------*/
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+body::-webkit-scrollbar-track {
+    background: rgba(236, 230, 194,0);
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #283618;
+    border-radius: 20px;
+    border: 3px solid #283618;
+}
+body{
+    overflow: overlay;
+}
+
+/*------------------------------------------------*/
+
+html,
+body {
+  height: 100%;
+
+}
+
+body{
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #599815;
+  background: url('../static/imagenes/fondos/Arboles.png') center bottom repeat-x,
+              url('../static/imagenes/fondos/Cielo.png') center bottom repeat-x,
+              #99DDB6;
+  background-size: auto 50%, auto 90%;
+}
+
+
+.form-signin {
+    width: 100%;
+    max-width: 750px;
+    padding: 15px;
+    margin: auto;
+}
+
+img{
+    width: 70%;
+    height: auto;
+}

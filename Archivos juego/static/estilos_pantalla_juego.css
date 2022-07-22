@@ -1,0 +1,183 @@
+/* ---------- MODIFICA SCROLL BAR ----------------*/
+
+::-webkit-scrollbar {
+    width: 12px;              
+}
+::-webkit-scrollbar-track {
+    background: rgba(236, 230, 194,0);      
+}
+::-webkit-scrollbar-thumb {
+    background-color: hsla(74, 32%, 32%, 0.5);    
+    border-radius: 20px;       
+    border: 3px solid hsla(51, 53%, 84%, 0.5);  
+}
+body{
+    overflow: overlay;
+
+}
+
+/*------------------------------------------------*/
+
+/* ----------------------- CAJAS BASE ------------------------------*/
+
+body,html{
+    background-color:#ece6c2;
+    margin: 0 !important;
+}
+
+#base{
+    min-height: 640px !important; 
+    background-color: #ece6c2;
+    position: absolute;  
+}
+
+#aspect-ratio{
+    min-height: 640px !important;
+    height: 100%;
+    position:relative;
+}
+
+
+#container{
+    top: 5%; right:2.5%; left:2.5%; bottom:5%; 
+    position: absolute;
+    width: 95%;
+    height: auto;
+    
+}
+
+#main{
+    width: 80%;
+    height: 100%;
+    background: url(../static/imagenes/fondos/Pasto.png) center bottom repeat-x,
+                url(../static/imagenes/fondos/Arboles.png) center 90% repeat-x,
+                url(../static/imagenes/fondos/Cielo.png) center top repeat-x;
+    background-size: 40%, 80%, 55%;
+    float:left;
+    position: relative;
+}
+
+#mapa{
+    width: 20%;
+    height: auto;
+    background-color: #23352A;
+    float: right;
+    position: relative;
+    background: url(../static/imagenes/fondos/mapa.png) center bottom no-repeat;
+    background-size:cover;
+    border-left: #ece6c2 7px solid;
+}
+
+#informacion{
+    width: 80%;
+    height: 85%;
+    top: 4%; right: 3.2%;
+    background-color:#edede0;
+    float:right;
+    padding-left: 32px !important; /* el scrollbar agrega 12px y parece que no esta centrado, correccion */
+    z-index: 1;
+    position: absolute;
+    overflow-y: scroll;   
+}
+
+/* --------------------------------------------------------------------------------------------- */
+
+/* --------------------------------- ELEMENTOS BASE --------------------------------------------*/
+
+#avatar_usuario{
+    width: 15%;
+    height: auto;
+    bottom: 2.5%; right: 2%;
+    z-index: 3;
+    object-fit: cover;
+    position: absolute;    
+}
+
+#avatar_maestro{
+    width: 21%;
+    height: auto;
+    z-index: 4;
+    position: absolute;
+    bottom: 7%; left:1.5%;
+}
+
+#boton-salir, #boton-admin{
+    background-color: #23352A;
+    position: absolute;
+    top: 81%;
+    z-index: 5;
+    display: inline-block;
+    color:#ece6c2;
+    border:none !important;
+}
+
+.bi-arrow-right-circle{
+    left:60%;
+}
+
+/* ----------------------------------------------------------------------------------------------- */
+
+/* ------------------------------------------ TEORIA --------------------------------------------- */
+
+
+
+/* ----------------------------------------------------------------------------------------------- */
+
+
+
+/* ------------------------------------------- CUESTIONARIO ---------------------------------------*/
+
+#pregunta{
+    background-color: #2C7342;
+    width: 100%;
+    color:#ece6c2;
+}
+
+.rta{
+    background-color: hsla(90, 71%, 35%, 0.5);
+    color:#261616;
+    margin: 2.5% 0px;
+}
+
+.form-check-input:checked{
+    background-color:#23352A !important;
+}
+
+#enviar{
+    background-color: #23352A;
+    color: #ece6c2;
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+
+
+#final{
+    background-color: #606C38;
+}
+
+#texto{
+    width: 60%;
+    height: 20%;
+    background-color:#23352A;
+    top: 6% ; right: 20%; left: 20%;
+    position: absolute;
+}
+
+#ranking{
+    width: 60%;
+    height: 50%;
+    background-color:#ece6c2;
+    top: 28% ; right: 20%; left: 20%;
+    position: absolute;
+}
+
+.boton{
+    width: 16%;
+    height: 8%;
+    background-color:#23352A !important;
+    border: none !important;
+    position: absolute;
+    top: 82%;
+    z-index: 5;
+    display: inline-block;
+}
